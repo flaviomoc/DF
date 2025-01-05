@@ -4,7 +4,7 @@ Welcome to the DF Package!
 ---------------------------
 DF stands for Debora and Flavio.
 
-This package includes a single function: time_since()'
+This package includes a single function: time_since()
 
 Be sure to check the description file for more details!
 ")
@@ -15,9 +15,9 @@ Be sure to check the description file for more details!
 #' @export
 time_since <- function() {
   # Predefined initial dates
-  civil <- as.Date("2022-10-27")  # Civil date
-  cerimonia <- as.Date("2023-01-05")  # Ceremony date
-  together_since <- as.Date("2014-03-24")  # New date
+  civil <- as.Date("2022-10-27")  # Civil marriage
+  cerimonia <- as.Date("2023-01-05")  # Wedding ceremony
+  together_since <- as.Date("2014-03-24")  # Dating
 
   # Get the current date
   current_date <- Sys.Date()

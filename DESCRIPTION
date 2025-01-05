@@ -3,7 +3,7 @@ Title: Debora&Flavio
 Version: 1.0
 Authors@R: 
     person("Flavio", "Mota", , "flaviomoc@gmail.com", role = c("aut", "cre"))
-Description: The Debora & Flavio (DF) package was designed to track the time they have spent together. It records the dates when they began dating, their civil marriage, and their wedding ceremony within the single function time_since(). Here’s to a life filled with blessings and a future that shines even brighter for them!
+Description: The Debora & Flavio (DF) package was created to track the time they have spent together. It records the dates when they started dating, their civil marriage, and their wedding ceremony within the single function time_since(). Here’s to a life filled with blessings and a future that shines even brighter for them!
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
