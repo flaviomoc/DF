@@ -6,10 +6,13 @@ DF stands for Debora and Flavio.
 
 This package includes a single function: time_since()
 
-Be sure to check the description file for more details!
+Be sure to check the description for more details!
 ")
 }
 #' Time since...
+#'
+#' @description
+#' The Debora & Flavio (DF) package was created to track the time they have spent together. It records the dates when they started dating, their civil marriage, and their wedding ceremony within the single function time_since(). Here’s to a life filled with blessings and a future that shines even brighter for them!
 #'
 #' @return Message!
 #' @export
@@ -41,17 +44,16 @@ time_since <- function() {
   time_since_together <- calculate_time(days_passed_together)  # Time since together
 
   # Create a message to show the elapsed time
-  time <- paste0("Debora and Flavio have been officially married for ",
-                         time_since_civil$years, " years, ",
-                         time_since_civil$months, " months, and ",
-                         time_since_civil$days, " days, but ",
-                         time_since_cerimonia$years, " years, ",
-                         time_since_cerimonia$months, " months, and ",
-                         time_since_cerimonia$days, " days have passed since their ceremony with family. ",
-                         "They are together for ",
-                         time_since_together$years, " years, ",
-                         time_since_together$months, " months, and ",
-                         time_since_together$days, " days.")
+  time <- paste("Debora and Flavio's Milestones:",
+                "-----------------------------------",
+                sprintf("Time since civil marriage: %d years, %d months, and %d days",
+                        time_since_civil$years, time_since_civil$months, time_since_civil$days),
+                sprintf("Time since ceremony with family: %d years, %d months, and %d days",
+                        time_since_cerimonia$years, time_since_cerimonia$months, time_since_cerimonia$days),
+                sprintf("Time since they started dating: %d years, %d months, and %d days",
+                        time_since_together$years, time_since_together$months, time_since_together$days),
+                sep = "\n")
 
-  return(time)
+  # Print the message
+  cat(time, "\n")
 }

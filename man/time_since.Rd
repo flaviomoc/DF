@@ -2,13 +2,13 @@
 % Please edit documentation in R/time.R
 \name{time_since}
 \alias{time_since}
-\title{time since initial date}
+\title{Time since...}
 \usage{
 time_since()
 }
 \value{
-message
+Message!
 }
 \description{
-time since initial date
+The Debora & Flavio (DF) package was created to track the time they have spent together. It records the dates when they started dating, their civil marriage, and their wedding ceremony within the single function time_since(). Here’s to a life filled with blessings and a future that shines even brighter for them!
 }
