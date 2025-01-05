@@ -33,7 +33,7 @@ time_since <- function() {
   time_since_together <- calculate_time(days_passed_together)  # Time since together
 
   # Create a message to show the elapsed time
-  elapsed_time <- paste0("Debora and Flavio have been officially married for ",
+  time <- paste0("Debora and Flavio have been officially married for ",
                          time_since_civil$years, " years, ",
                          time_since_civil$months, " months, and ",
                          time_since_civil$days, " days, but ",
@@ -45,5 +45,5 @@ time_since <- function() {
                          time_since_together$months, " months, and ",
                          time_since_together$days, " days.")
 
-  return(elapsed_time)
+  return(time)
 }
