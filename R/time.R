@@ -1,9 +1,17 @@
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("Welcome to DF package, which stands for Debora and Flavio! It has a single function: time_since()")
+  packageStartupMessage("
+Welcome to the DF Package!
+---------------------------
+DF stands for Debora and Flavio.
+
+This package includes a single function: time_since()'
+
+Be sure to check the description file for more details!
+")
 }
-#' time since initial date
+#' Time since...
 #'
-#' @return message
+#' @return Message!
 #' @export
 time_since <- function() {
   # Predefined initial dates
